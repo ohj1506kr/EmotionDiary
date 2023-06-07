@@ -24,7 +24,7 @@ const DiaryList = ({ diaryList }) => {
     <div>
       <ControlMenu
         value={sortType}
-        onchange={setSortType}
+        onChange={setSortType}
         optionList={sortOptionList}
       />
       {diaryList.map((it) => (

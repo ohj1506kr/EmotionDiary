@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React, { useEffect, useReducer, useRef } from "react";
 
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -78,6 +78,10 @@ const dummyData = [
     date: 1685956491885,
   },
 ];
+
+useEffect(() => {
+  localStorage.setItem("key", 10);
+}, []);
 
 function App() {
   const [data, dispatch] = useReducer(reducer, dummyData);

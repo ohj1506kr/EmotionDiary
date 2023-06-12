@@ -27,7 +27,7 @@ const Diary = () => {
       if (targetDiary) {
         setData(targetDiary);
       } else {
-        alert("없는 일기입니다.");
+        alert("존재하지 않는 일기입니다.");
         navigate(`/`, { replace: true });
       }
     }
